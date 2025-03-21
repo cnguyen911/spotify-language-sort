@@ -1,6 +1,6 @@
 const axios = require('axios');
 const querystring = require('querystring');
-const { detectLanguage } = require('../services/languageDetection5');
+const { detectLanguage } = require('../services/languageDetection');
 
 exports.login = (req, res) => {
   const CLIENT_ID = process.env.SPOTIFY_CLIENT_ID;
