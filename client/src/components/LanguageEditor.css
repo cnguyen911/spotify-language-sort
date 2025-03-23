@@ -1,0 +1,148 @@
+.language-editor {
+    background-color: rgba(40, 40, 40, 0.7);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid #333;
+  }
+  
+  .language-editor h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  .language-editor p {
+    color: #b3b3b3;
+    margin-bottom: 1.5rem;
+  }
+  
+  .track-list {
+    max-height: 600px;
+    overflow-y: auto;
+    margin: 1.5rem 0;
+    padding-right: 10px;
+  }
+  
+  .track-list::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .track-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+  }
+  
+  .track-list::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  
+  .track-list::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .track-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(51, 51, 51, 0.7);
+    border-radius: 8px;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+  }
+  
+  .track-item:hover {
+    background-color: rgba(51, 51, 51, 0.9);
+    transform: translateY(-2px);
+    border-color: #1db954;
+  }
+  
+  .track-info {
+    flex: 1;
+    margin-right: 1.5rem;
+  }
+  
+  .track-name {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .track-artists {
+    font-size: 0.95rem;
+    color: #b3b3b3;
+  }
+  
+  .track-language {
+    min-width: 160px;
+  }
+  
+  .track-language select {
+    background-color: #121212;
+    color: white;
+    padding: 10px 12px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%231db954' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 40px;
+  }
+  
+  .track-language select:hover, .track-language select:focus {
+    border-color: #1db954;
+    outline: none;
+  }
+  
+  .editor-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+  }
+  
+  .cancel-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #444;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-right: 1rem;
+    font-weight: 600;
+  }
+  
+  .cancel-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #666;
+    transform: translateY(-2px);
+  }
+  
+  .save-button {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(29, 185, 84, 0.2);
+  }
+  
+  .save-button:hover {
+    background-color: #1ed760;
+    box-shadow: 0 6px 16px rgba(29, 185, 84, 0.3);
+    transform: translateY(-2px);
+  }

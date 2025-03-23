@@ -1,0 +1,214 @@
+.language-sorter {
+  position: relative;
+}
+
+.back-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.back-button:before {
+  content: "←";
+  margin-right: 8px;
+  font-size: 1.1rem;
+}
+
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.language-sorter h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #1db954, #1ed760);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.language-summary {
+  background-color: rgba(40, 40, 40, 0.7);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 1px solid #333;
+}
+
+.language-summary h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.language-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.language-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgba(51, 51, 51, 0.7);
+  border-radius: 8px;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+.language-item:hover {
+  background-color: rgba(51, 51, 51, 0.9);
+  transform: translateY(-2px);
+  border-color: #1db954;
+}
+
+.language-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.language-count {
+  color: #1db954;
+  font-weight: 500;
+}
+
+.language-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.edit-button {
+  background-color: transparent;
+  color: #1db954;
+  border: 2px solid #1db954;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.edit-button:hover {
+  background-color: rgba(29, 185, 84, 0.1);
+  box-shadow: 0 4px 12px rgba(29, 185, 84, 0.2);
+  transform: translateY(-2px);
+}
+
+.create-button {
+  background-color: #1db954;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 6px 12px rgba(29, 185, 84, 0.3);
+  letter-spacing: 0.5px;
+}
+
+.create-button:hover {
+  background-color: #1ed760;
+  box-shadow: 0 8px 16px rgba(29, 185, 84, 0.4);
+  transform: translateY(-3px);
+}
+
+.create-button:disabled {
+  background-color: rgba(29, 185, 84, 0.5);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.created-playlists {
+  background-color: rgba(40, 40, 40, 0.7);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 1px solid #333;
+}
+
+.created-playlists h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.playlist-results {
+  list-style-type: none;
+  padding: 0;
+}
+
+.playlist-results li {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgba(51, 51, 51, 0.7);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+.playlist-results li:hover {
+  background-color: rgba(51, 51, 51, 0.9);
+  transform: translateY(-2px);
+  border-color: #1db954;
+}
+
+.playlist-results a {
+  color: #1db954;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+}
+
+.playlist-results a:hover {
+  color: #1ed760;
+  text-decoration: underline;
+}
+
+.track-count {
+  color: #b3b3b3;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.analyzing {
+  text-align: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.analyzing p {
+  margin-top: 1.5rem;
+  color: #b3b3b3;
+  font-size: 1.1rem;
+}
